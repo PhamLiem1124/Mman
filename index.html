@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mẹ và Con - Chia Sẻ Cuộc Sống Gia Đình</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JG93TTBTJ8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JG93TTBTJ8');
+    </script>
     <style>
         * {
             margin: 0;
@@ -28,7 +38,7 @@
             z-index: 1000;
             padding: 1rem 0;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
         }
 
         .nav-container {
@@ -49,8 +59,15 @@
         }
 
         @keyframes heartbeat {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         .nav-links {
@@ -138,12 +155,15 @@
                 transform: translateY(100vh) rotate(0deg);
                 opacity: 0;
             }
+
             10% {
                 opacity: 0.7;
             }
+
             90% {
                 opacity: 0.7;
             }
+
             100% {
                 transform: translateY(-100px) rotate(360deg);
                 opacity: 0;
@@ -151,8 +171,15 @@
         }
 
         @keyframes floating {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(10deg); }
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
         }
 
         .hero-content {
@@ -207,7 +234,7 @@
             left: 50%;
             width: 0;
             height: 0;
-            background: rgba(255,255,255,0.3);
+            background: rgba(255, 255, 255, 0.3);
             border-radius: 50%;
             transform: translate(-50%, -50%);
             transition: all 0.5s ease;
@@ -246,6 +273,7 @@
                 opacity: 0;
                 transform: translateY(50px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -276,8 +304,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.02); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.02);
+            }
         }
 
         .features-grid {
@@ -290,7 +325,7 @@
             background: white;
             padding: 3rem 2rem;
             border-radius: 25px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: all 0.4s ease;
             position: relative;
@@ -337,8 +372,13 @@
         }
 
         @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .feature-card h3 {
@@ -381,14 +421,14 @@
             background: white;
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             transition: all 0.4s ease;
             position: relative;
         }
 
         .content-card:hover {
             transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
         }
 
         .content-image {
@@ -419,14 +459,35 @@
             animation: bounce 2s infinite;
         }
 
-        .food-image::before { content: '🍳'; }
-        .plant-image::before { content: '🌱'; }
-        .crypto-image::before { content: '₿'; }
+        .food-image::before {
+            content: '🍳';
+        }
+
+        .plant-image::before {
+            content: '🌱';
+        }
+
+        .crypto-image::before {
+            content: '₿';
+        }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translate(-50%, -50%) translateY(0); }
-            40% { transform: translate(-50%, -50%) translateY(-20px); }
-            60% { transform: translate(-50%, -50%) translateY(-10px); }
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translate(-50%, -50%) translateY(0);
+            }
+
+            40% {
+                transform: translate(-50%, -50%) translateY(-20px);
+            }
+
+            60% {
+                transform: translate(-50%, -50%) translateY(-10px);
+            }
         }
 
         .content-card-body {
@@ -469,7 +530,8 @@
             flex-wrap: wrap;
         }
 
-        .blog-btn, .youtube-btn {
+        .blog-btn,
+        .youtube-btn {
             flex: 1;
             min-width: 120px;
             padding: 0.8rem 1rem;
@@ -493,23 +555,26 @@
             color: white;
         }
 
-        .blog-btn:hover, .youtube-btn:hover {
+        .blog-btn:hover,
+        .youtube-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
 
-        .blog-btn::before, .youtube-btn::before {
+        .blog-btn::before,
+        .youtube-btn::before {
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
             transition: left 0.5s;
         }
 
-        .blog-btn:hover::before, .youtube-btn:hover::before {
+        .blog-btn:hover::before,
+        .youtube-btn:hover::before {
             left: 100%;
         }
 
@@ -572,6 +637,7 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -610,7 +676,8 @@
                 flex-direction: column;
             }
 
-            .blog-btn, .youtube-btn {
+            .blog-btn,
+            .youtube-btn {
                 min-width: auto;
             }
         }
@@ -637,6 +704,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -669,7 +737,8 @@
         </div>
         <div class="hero-content">
             <h1>Chào Mừng Đến Với Nhà Chúng Tôi</h1>
-            <p>Chia sẻ những câu chuyện đời thường, từ bếp núc gia đình đến khu vườn nhỏ, và cả những khám phá về thế giới công nghệ hiện đại</p>
+            <p>Chia sẻ những câu chuyện đời thường, từ bếp núc gia đình đến khu vườn nhỏ, và cả những khám phá về thế
+                giới công nghệ hiện đại</p>
             <div class="cta-buttons">
                 <a href="#food" class="btn btn-primary">Khám phá nội dung</a>
                 <a href="#about" class="btn btn-secondary">Về chúng tôi</a>
@@ -686,17 +755,20 @@
                 <div class="feature-card fade-in">
                     <div class="feature-icon">🍳</div>
                     <h3>Ẩm Thực Gia Đình</h3>
-                    <p>Những công thức nấu ăn truyền thống và hiện đại, từ món ăn hàng ngày đến các món đặc biệt trong dịp lễ tết. Mỗi món ăn đều chứa đựng tình yêu thương của gia đình.</p>
+                    <p>Những công thức nấu ăn truyền thống và hiện đại, từ món ăn hàng ngày đến các món đặc biệt trong
+                        dịp lễ tết. Mỗi món ăn đều chứa đựng tình yêu thương của gia đình.</p>
                 </div>
                 <div class="feature-card fade-in">
                     <div class="feature-icon">🌱</div>
                     <h3>Khu Vườn Xanh</h3>
-                    <p>Chia sẻ kinh nghiệm trồng trọt, chăm sóc cây cối từ những chậu cây nhỏ trong nhà đến khu vườn rau sạch. Mỗi cây xanh là một niềm vui và sự kết nối với thiên nhiên.</p>
+                    <p>Chia sẻ kinh nghiệm trồng trọt, chăm sóc cây cối từ những chậu cây nhỏ trong nhà đến khu vườn rau
+                        sạch. Mỗi cây xanh là một niềm vui và sự kết nối với thiên nhiên.</p>
                 </div>
                 <div class="feature-card fade-in">
                     <div class="feature-icon">₿</div>
                     <h3>Công Nghệ & Tiền Ảo</h3>
-                    <p>Khám phá thế giới blockchain, cryptocurrency và các xu hướng công nghệ mới. Những thông tin hữu ích cho người mới bắt đầu và cách ứng dụng vào cuộc sống.</p>
+                    <p>Khám phá thế giới blockchain, cryptocurrency và các xu hướng công nghệ mới. Những thông tin hữu
+                        ích cho người mới bắt đầu và cách ứng dụng vào cuộc sống.</p>
                 </div>
             </div>
         </div>
@@ -716,7 +788,8 @@
                             <span class="tag">Bánh chưng</span>
                             <span class="tag">Bún bò</span>
                         </div>
-                        <p>Những công thức món ăn truyền thống được truyền từ đời này sang đời khác, mang đậm hương vị quê nhà.</p>
+                        <p>Những công thức món ăn truyền thống được truyền từ đời này sang đời khác, mang đậm hương vị
+                            quê nhà.</p>
                         <div class="link-buttons">
                             <a href="#" class="blog-btn">📝 Đọc Blog</a>
                             <a href="#" class="youtube-btn">📺 Xem Video</a>
@@ -748,7 +821,8 @@
                             <span class="tag">Cookie</span>
                             <span class="tag">Traditional sweets</span>
                         </div>
-                        <p>Những công thức làm bánh và đồ ngọt tại nhà, từ bánh sinh nhật đến các loại kẹo truyền thống.</p>
+                        <p>Những công thức làm bánh và đồ ngọt tại nhà, từ bánh sinh nhật đến các loại kẹo truyền thống.
+                        </p>
                         <div class="link-buttons">
                             <a href="#" class="blog-btn">📝 Đọc Blog</a>
                             <a href="#" class="youtube-btn">📺 Xem Video</a>
@@ -773,7 +847,8 @@
                             <span class="tag">Pothos</span>
                             <span class="tag">Lưỡi hổ</span>
                         </div>
-                        <p>Hướng dẫn chăm sóc các loại cây cảnh trong nhà, tạo không gian xanh mát cho ngôi nhà của bạn.</p>
+                        <p>Hướng dẫn chăm sóc các loại cây cảnh trong nhà, tạo không gian xanh mát cho ngôi nhà của bạn.
+                        </p>
                         <div class="link-buttons">
                             <a href="#" class="blog-btn">📝 Đọc Blog</a>
                             <a href="#" class="youtube-btn">📺 Xem Video</a>
@@ -789,7 +864,8 @@
                             <span class="tag">Organic</span>
                             <span class="tag">Hydroponics</span>
                         </div>
-                        <p>Kinh nghiệm trồng rau sạch tại nhà, từ gieo hạt đến thu hoạch, mang đến bữa ăn an toàn cho gia đình.</p>
+                        <p>Kinh nghiệm trồng rau sạch tại nhà, từ gieo hạt đến thu hoạch, mang đến bữa ăn an toàn cho
+                            gia đình.</p>
                         <div class="link-buttons">
                             <a href="#" class="blog-btn">📝 Đọc Blog</a>
                             <a href="#" class="youtube-btn">📺 Xem Video</a>
@@ -805,7 +881,8 @@
                             <span class="tag">Ổi</span>
                             <span class="tag">Xoài</span>
                         </div>
-                        <p>Cách trồng và chăm sóc các loại cây ăn trái trong chậu hoặc sân vườn, tận hưởng thành quả ngọt ngào.</p>
+                        <p>Cách trồng và chăm sóc các loại cây ăn trái trong chậu hoặc sân vườn, tận hưởng thành quả
+                            ngọt ngào.</p>
                         <div class="link-buttons">
                             <a href="#" class="blog-btn">📝 Đọc Blog</a>
                             <a href="#" class="youtube-btn">📺 Xem Video</a>
@@ -830,7 +907,8 @@
                             <span class="tag">Ethereum</span>
                             <span class="tag">DeFi</span>
                         </div>
-                        <p>Hiểu về công nghệ blockchain và tiền ảo từ những kiến thức cơ bản nhất, phù hợp cho người mới bắt đầu.</p>
+                        <p>Hiểu về công nghệ blockchain và tiền ảo từ những kiến thức cơ bản nhất, phù hợp cho người mới
+                            bắt đầu.</p>
                         <div class="link-buttons">
                             <a href="#" class="blog-btn">📝 Đọc Blog</a>
                             <a href="#" class="youtube-btn">📺 Xem Video</a>
@@ -846,7 +924,8 @@
                             <span class="tag">Risk Management</span>
                             <span class="tag">Portfolio</span>
                         </div>
-                        <p>Chiến lược đầu tư tiền ảo an toàn, quản lý rủi ro và xây dựng danh mục đầu tư phù hợp với từng người.</p>
+                        <p>Chiến lược đầu tư tiền ảo an toàn, quản lý rủi ro và xây dựng danh mục đầu tư phù hợp với
+                            từng người.</p>
                         <div class="link-buttons">
                             <a href="#" class="blog-btn">📝 Đọc Blog</a>
                             <a href="#" class="youtube-btn">📺 Xem Video</a>
@@ -862,7 +941,8 @@
                             <span class="tag">IoT</span>
                             <span class="tag">Web3</span>
                         </div>
-                        <p>Khám phá các xu hướng công nghệ mới như AI, IoT, Web3 và cách chúng thay đổi cuộc sống hàng ngày.</p>
+                        <p>Khám phá các xu hướng công nghệ mới như AI, IoT, Web3 và cách chúng thay đổi cuộc sống hàng
+                            ngày.</p>
                         <div class="link-buttons">
                             <a href="#" class="blog-btn">📝 Đọc Blog</a>
                             <a href="#" class="youtube-btn">📺 Xem Video</a>
@@ -877,11 +957,12 @@
     <section class="content-section" id="about" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
         <div class="container">
             <h2 class="section-title">👨‍👩‍👧‍👦 Về Gia Đình Chúng Tôi</h2>
-            <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 3rem; background: white; border-radius: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+            <div
+                style="max-width: 800px; margin: 0 auto; text-align: center; padding: 3rem; background: white; border-radius: 25px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                 <div style="font-size: 4rem; margin-bottom: 2rem; animation: heartbeat 2s infinite;">💕</div>
                 <p style="font-size: 1.2rem; line-height: 1.8; color: #2c3e50; margin-bottom: 2rem;">
-                    Chúng tôi là một gia đình nhỏ với niềm đam mê chia sẻ những câu chuyện đời thường. 
-                    Từ những món ăn được nấu với tình yêu thương trong bếp, đến những cây xanh được chăm sóc 
+                    Chúng tôi là một gia đình nhỏ với niềm đam mê chia sẻ những câu chuyện đời thường.
+                    Từ những món ăn được nấu với tình yêu thương trong bếp, đến những cây xanh được chăm sóc
                     cẩn thận trong vườn, và cả những khám phá thú vị về thế giới công nghệ hiện đại.
                 </p>
                 <p style="font-size: 1.1rem; color: #7f8c8d; font-style: italic;">
@@ -961,9 +1042,9 @@
             heart.style.left = Math.random() * 100 + '%';
             heart.style.animationDelay = Math.random() * 6 + 's';
             heart.innerHTML = ['💕', '🌸', '💝', '🌺', '💖', '🌷', '💗', '🌻', '💐'][Math.floor(Math.random() * 9)];
-            
+
             document.querySelector('.floating-elements').appendChild(heart);
-            
+
             setTimeout(() => {
                 heart.remove();
             }, 6000);
@@ -974,7 +1055,7 @@
 
         // Add sparkle effect on feature cards
         document.querySelectorAll('.feature-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
+            card.addEventListener('mouseenter', function () {
                 const sparkle = document.createElement('div');
                 sparkle.innerHTML = '✨';
                 sparkle.style.position = 'absolute';
@@ -984,9 +1065,9 @@
                 sparkle.style.animation = 'fadeInUp 1s ease-out forwards';
                 sparkle.style.pointerEvents = 'none';
                 sparkle.style.zIndex = '10';
-                
+
                 this.appendChild(sparkle);
-                
+
                 setTimeout(() => {
                     sparkle.remove();
                 }, 1000);
@@ -995,20 +1076,20 @@
 
         // Add bounce effect to buttons
         document.querySelectorAll('.btn, .blog-btn, .youtube-btn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
+            btn.addEventListener('click', function (e) {
                 const ripple = document.createElement('span');
                 const rect = this.getBoundingClientRect();
                 const size = Math.max(rect.width, rect.height);
                 const x = e.clientX - rect.left - size / 2;
                 const y = e.clientY - rect.top - size / 2;
-                
+
                 ripple.style.width = ripple.style.height = size + 'px';
                 ripple.style.left = x + 'px';
                 ripple.style.top = y + 'px';
                 ripple.classList.add('ripple');
-                
+
                 this.appendChild(ripple);
-                
+
                 setTimeout(() => {
                     ripple.remove();
                 }, 600);
@@ -1049,4 +1130,5 @@
         }, 100);
     </script>
 </body>
+
 </html>
